@@ -6,6 +6,7 @@ fetch("https://raw.githubusercontent.com/mrblacklicorice/HackVH/main/assets/src/
         console.log(res_data);
         topic_loader(data, topics_name, topics_list, "Subjects");
     });
+var path;
 
 var topics_name = document.getElementById("topic_name");
 var topics_list = document.getElementsByClassName("posts")[0];
@@ -24,7 +25,6 @@ function create_topic(data_, topics_name_, topics_list_) {
     var li = document.createElement('li'); // One eleemnt from ul 
     var li_a = document.createElement('a'); //  ???
 
-    a.setAttribute("href", "#");
     a.setAttribute("class", "image");
 
     img.setAttribute("src", data_.media);
@@ -119,7 +119,9 @@ function tagMatch(search_) {
 }
 //TODO: Function that takes in HTML search input
 
+function go_back(path_) {
 
+}
 
 // TODO: Function that takes in the array of values, sorts it, creates the html objects in the order of most matches to least - Up to a threshhold
 function generateResult(values_) {

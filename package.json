@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "http": "0.0.1-security",
     "node": "^15.14.0",
+    "path": "^0.12.7",
     "require": "^2.4.20",
     "require.js": "^1.0.0"
   },
