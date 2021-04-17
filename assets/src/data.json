@@ -1,12 +1,13 @@
 [
     {
         "topic": "History",
-        "description": "",
-        "media": "",
+        "description": "Sources for Ap World History, Ap European History, and Ap United States History.",
+        "media": "https://i.imgur.com/cavw7kZ.png",
         "objects": [
             {
                 "topic": "AP World History",
-                "description": "A collection of resources for AP World History",
+                "description": "A collection of resources for AP World History.",
+                "media": "https://i.ytimg.com/vi/BxlZrn5Dwdw/maxresdefault.jpg",
                 "objects": [
                     {
                         "id": 0,
@@ -22,7 +23,7 @@
                             "saq",
                             "dbq",
                             "leq",
-                            "history"
+                            "world history"
                         ],
                         "author": "Collegeboard",
                         "media": "https://i.ytimg.com/vi/BxlZrn5Dwdw/maxresdefault.jpg",
@@ -41,7 +42,8 @@
                             "collegeboard",
                             "kcq",
                             "topics",
-                            "exam"
+                            "exam",
+                            "world history"
                         ],
                         "author": "Collegeboard",
                         "media": "https://i.ytimg.com/vi/BxlZrn5Dwdw/maxresdefault.jpg",
@@ -57,11 +59,12 @@
                             "collegeboard",
                             "exam",
                             "cram",
-                            "study"
+                            "study",
+                            "world history"
                         ],
                         "author": "Collegeboard",
                         "media": "https://i.ytimg.com/vi/BxlZrn5Dwdw/maxresdefault.jpg",
-                        "description": "Low on time? Has your teacher slacked off the entire year? Tihs resource gives you a guide for how you can study andl earn the entire courses content in only a few months."
+                        "description": "Low on time? Has your teacher slacked off the entire year? This resource gives you a guide for how you can study andl earn the entire courses content in only a few months."
                     },
                     {
                         "id": 3,
@@ -74,7 +77,8 @@
                             "ww2",
                             "7,6",
                             "war",
-                            "unit 7"
+                            "unit 7",
+                            "world history"
                         ],
                         "author": "Heimler's History",
                         "media": "https://wildensocialstudies.weebly.com/uploads/2/1/1/6/21166454/screen-shot-2020-09-08-at-2-27-52-pm_orig.png",
@@ -94,7 +98,8 @@
                             "apwhdiscord",
                             "help",
                             "homeworkhelp",
-                            "worlddiscord"
+                            "worlddiscord",
+                            "world history"
                         ],
                         "author": "AP Students Discord",
                         "media": "https://hypixel.net/attachments/join-discord-png-13-png.1715046/",
@@ -105,6 +110,7 @@
             {
                 "topic": "AP European History",
                 "description": "A collection of resources for AP European History",
+                "media": "https://apstudents.collegeboard.org/ap/2019-07/share-image.png",
                 "objects": [
                     {
                         "id": 5,
@@ -116,7 +122,8 @@
                             "collegeboard",
                             "exam",
                             "cram",
-                            "study"
+                            "study",
+                            "european history"
                         ],
                         "author": "Collegeboard",
                         "media": "https://apstudents.collegeboard.org/ap/2019-07/share-image.png",
@@ -134,11 +141,12 @@
                             "euro",
                             "ap euro",
                             "european",
-                            "history"
+                            "history",
+                            "european history"
                         ],
                         "author": "Collegeboard",
                         "media": "https://apstudents.collegeboard.org/ap/2019-07/share-image.png",
-                        "description": "Did you know that the AP European HIstory exam is organized based upon Key Concepts, or K.C.s for short? This document provides an outline for the entire course, listing the key topics that you need to know for AP EURO, and also provides some examples and info for each topic as well!"
+                        "description": "Did you know that the AP European History exam is organized based upon Key Concepts, or K.C.s for short? This document provides an outline for the entire course, listing the key topics that you need to know for AP EURO, and also provides some examples and info for each topic as well!"
                     },
                     {
                         "id": 7,
@@ -153,7 +161,8 @@
                             "study",
                             "review",
                             "ap euro",
-                            "european"
+                            "european",
+                            "european history"
                         ],
                         "author": "Collegeboard",
                         "media": "https://apstudents.collegeboard.org/ap/2019-07/share-image.png",
@@ -170,7 +179,8 @@
                             "unification",
                             "nationalism",
                             "german unification",
-                            "italian unification"
+                            "italian unification",
+                            "european history"
                         ],
                         "author": "Crashcourse",
                         "media": "https://www.cavsconnect.com/wp-content/uploads/2017/03/Screen-Shot-2017-03-05-at-8.46.54-PM.png",
@@ -191,7 +201,8 @@
                             "help",
                             "homeworkhelp",
                             "ape",
-                            "eurodiscord"
+                            "eurodiscord",
+                            "european history"
                         ],
                         "author": "AP Students Discord",
                         "media": "https://hypixel.net/attachments/join-discord-png-13-png.1715046/",
@@ -202,6 +213,7 @@
             {
                 "topic": "AP US History",
                 "description": "A collection of resources for AP US History",
+                "media": "https://i.ytimg.com/vi/Jm1qJKYR8wM/hqdefault.jpg",
                 "objects": [
                     {
                         "id": 10,
@@ -217,7 +229,8 @@
                             "saq",
                             "dbq",
                             "leq",
-                            "history"
+                            "history",
+                            "us history"
                         ],
                         "author": "Collegeboard",
                         "media": "https://i.ytimg.com/vi/Jm1qJKYR8wM/hqdefault.jpg",
@@ -235,11 +248,12 @@
                             "cram",
                             "study",
                             "apush",
-                            "ap us"
+                            "ap us",
+                            "us history"
                         ],
                         "author": "Collegeboard",
                         "media": "https://i.ytimg.com/vi/Jm1qJKYR8wM/hqdefault.jpg",
-                        "description": "Low on time? Has your teacher slacked off the entire year? Tihs resource gives you a guide for how you can study andl earn the entire courses content in only a few months."
+                        "description": "Low on time? Has your teacher slacked off the entire year? This resource gives you a guide for how you can study andl earn the entire courses content in only a few months."
                     },
                     {
                         "id": 12,
@@ -254,7 +268,8 @@
                             "collegeboard",
                             "kcq",
                             "topics",
-                            "exam"
+                            "exam",
+                            "us history"
                         ],
                         "author": "Collegeboard",
                         "media": "https://i.ytimg.com/vi/Jm1qJKYR8wM/hqdefault.jpg",
@@ -271,7 +286,8 @@
                             "period 5",
                             "apush",
                             "manifest destiny",
-                            "mexican american war"
+                            "mexican american war",
+                            "us history"
                         ],
                         "author": "Kahn Academy",
                         "media": "https://download.logo.wine/logo/Khan_Academy/Khan_Academy-Logo.wine.png",
@@ -292,7 +308,8 @@
                             "help",
                             "homeworkhelp",
                             "apus",
-                            "apushdiscord"
+                            "apushdiscord",
+                            "us history"
                         ],
                         "author": "AP Students Discord",
                         "media": "https://hypixel.net/attachments/join-discord-png-13-png.1715046/",
@@ -304,12 +321,13 @@
     },
     {
         "topic": "Science",
-        "description": "",
-        "media": "",
+        "description": "Includes: AP Biology, AP Chemistry, AP Physics 1",
+        "media": "https://i.imgur.com/mmydm1q.png",
         "objects": [
             {
                 "topic": "AP Biology",
                 "description": "A collection of resources for AP Biology",
+                "media": "https://i.imgur.com/fuDu4UM.png",
                 "objects": [
                     {
                         "id": 15,
@@ -346,7 +364,7 @@
                         ],
                         "author": "Collegeboard",
                         "media": "https://i.imgur.com/fuDu4UM.png",
-                        "description": "Low on time? Has your teacher slacked off the entire year? Tihs resource gives you a guide for how you can study andl earn the entire courses content in only a few months."
+                        "description": "Low on time? Has your teacher slacked off the entire year? This resource gives you a guide for how you can study andl earn the entire courses content in only a few months."
                     },
                     {
                         "id": 17,
@@ -407,6 +425,7 @@
             {
                 "topic": "AP Chemistry",
                 "description": "A collection of resources for AP Chemistry",
+                "media": "https://i.imgur.com/xTo69J8.png",
                 "objects": [
                     {
                         "id": 20,
@@ -435,11 +454,12 @@
                             "pacing",
                             "study",
                             "chem",
-                            "guide"
+                            "guide",
+                            "chemistry"
                         ],
                         "author": "Collegeboard",
                         "media": "https://i.imgur.com/Uj4vL5j.jpg",
-                        "description": "Low on time? Has your teacher slacked off the entire year? Tihs resource gives you a guide for how you can study andl earn the entire courses content in only a few months."
+                        "description": "Low on time? Has your teacher slacked off the entire year? This resource gives you a guide for how you can study andl earn the entire courses content in only a few months."
                     },
                     {
                         "id": 22,
@@ -500,6 +520,7 @@
             {
                 "topic": "AP Physics 1",
                 "description": "A collection of resources for AP Physics 1",
+                "media": "https://i3.ytimg.com/vi/Ty8q8lFrPX0/hqdefault.jpg",
                 "objects": [
                     {
                         "id": 25,
@@ -546,7 +567,8 @@
                             "test",
                             "scram",
                             "study",
-                            "help"
+                            "help",
+                            "physics"
                         ],
                         "author": "Youtube",
                         "media": "https://img.pngio.com/youtube-png-images-free-download-youtube-png-logo-2272_1704.png",
@@ -564,7 +586,8 @@
                             "test",
                             "scram",
                             "study",
-                            "help"
+                            "help",
+                            "physics"
                         ],
                         "author": "Youtube",
                         "media": "https://img.pngio.com/youtube-png-images-free-download-youtube-png-logo-2272_1704.png",
@@ -579,13 +602,13 @@
                         "tags": [
                             "discord",
                             "ap phyiscs",
-                            "chem",
+                            "phys",
                             "discord",
-                            "chem discord",
+                            "physics discord",
                             "help",
                             "homework help",
-                            "chemistry",
-                            "ap chem discord"
+                            "physics",
+                            "ap phys discord"
                         ],
                         "author": "AP Students Discord",
                         "media": "https://hypixel.net/attachments/join-discord-png-13-png.1715046/",
@@ -597,8 +620,8 @@
     },
     {
         "topic": "English",
-        "description": "",
-        "media": "",
+        "description": "Includes: AP English Language & Composition, AP English Literature & Composition",
+        "media": "https://i.ytimg.com/vi/-xKM3xo0mSA/maxresdefault.jpg",
         "objects": [
             {
                 "topic": "AP English Language & Composition",
@@ -611,10 +634,11 @@
                         "link": "https://apcentral.collegeboard.org/courses/ap-english-language-and-composition/exam/past-exam-questions",
                         "rating": 0,
                         "tags": [
-                            "Collegeboard",
+                            "collegeboard",
                             "essay",
                             "ap lang",
-                            "lang"
+                            "lang",
+                            "language"
                         ],
                         "author": "Collegeboard",
                         "media": "https://i.ytimg.com/vi/-xKM3xo0mSA/maxresdefault.jpg",
@@ -627,15 +651,16 @@
                         "link": "https://apcentral.collegeboard.org/pdf/ap-english-language-and-composition-course-pacing-guide.pdf",
                         "rating": 0,
                         "tags": [
-                            "Collegeboard",
+                            "collegeboard",
                             "pacing",
                             "study",
                             "lang",
-                            "guide"
+                            "guide",
+                            "language"
                         ],
-                        "author": "Collegeboard",
+                        "author": "collegeboard",
                         "media": "https://i.ytimg.com/vi/-xKM3xo0mSA/maxresdefault.jpg",
-                        "description": "Low on time? Has your teacher slacked off the entire year? Tihs resource gives you a guide for how you can study andl earn the entire courses content in only a few months."
+                        "description": "Low on time? Has your teacher slacked off the entire year? This resource gives you a guide for how you can study andl earn the entire courses content in only a few months."
                     },
                     {
                         "id": 32,
@@ -648,7 +673,8 @@
                             "lang review",
                             "study",
                             "lang",
-                            "guide"
+                            "guide",
+                            "language"
                         ],
                         "author": "Simple Studies",
                         "media": "https://i.imgur.com/0U6mN7Y.png",
@@ -665,7 +691,8 @@
                             "pacing",
                             "study",
                             "lang",
-                            "guide"
+                            "guide",
+                            "language"
                         ],
                         "author": "Albert",
                         "media": "https://i.imgur.com/0U6mN7Y.png",
@@ -708,7 +735,8 @@
                             "Collegeboard",
                             "essay",
                             "ap lit",
-                            "lit"
+                            "lit",
+                            "literature"
                         ],
                         "author": "Collegeboard",
                         "media": "https://i.imgur.com/3GF2ZX6.png",
@@ -725,11 +753,12 @@
                             "pacing",
                             "study",
                             "lit",
-                            "guide"
+                            "guide",
+                            "literature"
                         ],
                         "author": "Collegeboard",
                         "media": "https://i.imgur.com/3GF2ZX6.png",
-                        "description": "Low on time? Has your teacher slacked off the entire year? Tihs resource gives you a guide for how you can study andl earn the entire courses content in only a few months."
+                        "description": "Low on time? Has your teacher slacked off the entire year? This resource gives you a guide for how you can study andl earn the entire courses content in only a few months."
                     },
                     {
                         "id": 37,
@@ -742,7 +771,8 @@
                             "pacing",
                             "study",
                             "lit",
-                            "guide"
+                            "guide",
+                            "literature"
                         ],
                         "author": "Simple Studies",
                         "media": "https://i.imgur.com/0U6mN7Y.png",
@@ -759,7 +789,8 @@
                             "pacing",
                             "study",
                             "lit",
-                            "guide"
+                            "guide",
+                            "literature"
                         ],
                         "author": "Prep Scholar",
                         "media": "https://i.imgur.com/0U6mN7Y.png",
@@ -792,12 +823,13 @@
     },
     {
         "topic": "Math",
-        "description": "",
-        "media": "",
+        "description": "Includes: AP calculus AB, AP Calculus BC",
+        "media": "https://logopond.com/logos/c3130fd06101bbe6bb1f540e0c3ec1b3.png",
         "objects": [
             {
                 "topic": "AP Calculus AB",
                 "description": "A collection of resources for AP Calculus AB",
+                "media": "https://i.imgur.com/NFeaW8B.png",
                 "objects": [
                     {
                         "id": 40,
@@ -814,7 +846,8 @@
                             "help",
                             "homework help",
                             "calculus",
-                            "ap calc discord"
+                            "ap calc discord",
+                            "calculus ab"
                         ],
                         "author": "AP Students Discord",
                         "media": "https://i.imgur.com/NFeaW8B.png",
@@ -831,7 +864,7 @@
                             "math",
                             "ap calc",
                             "calc",
-                            "frq"
+                            "calculus ab"
                         ],
                         "author": "Collegeboard",
                         "media": "https://i.imgur.com/3GF2ZX6.png",
@@ -848,11 +881,12 @@
                             "pacing",
                             "study",
                             "calc",
-                            "guide"
+                            "guide",
+                            "calculus ab"
                         ],
                         "author": "Collegeboard",
                         "media": "https://i.imgur.com/3GF2ZX6.png",
-                        "description": "Low on time? Has your teacher slacked off the entire year? Tihs resource gives you a guide for how you can study andl earn the entire courses content in only a few months."
+                        "description": "Low on time? Has your teacher slacked off the entire year? This resource gives you a guide for how you can study andl earn the entire courses content in only a few months."
                     },
                     {
                         "id": 43,
@@ -865,7 +899,8 @@
                             "pacing",
                             "study",
                             "calc",
-                            "guide"
+                            "guide",
+                            "calculus ab"
                         ],
                         "author": "Youtube",
                         "media": "https://img.pngio.com/youtube-png-images-free-download-youtube-png-logo-2272_1704.png",
@@ -882,7 +917,8 @@
                             "pacing",
                             "study",
                             "calc",
-                            "guide"
+                            "guide",
+                            "calculus ab"
                         ],
                         "author": "Frontier",
                         "media": "https://allaccess.collegeboard.org/allaccess/styles/cb_post_square_thumbnail/public/2020-02/College-Board-Logo-Icon.JPG?h=1a6cd273&itok=q8PYwOVi",
@@ -893,6 +929,7 @@
             {
                 "topic": "AP Calculus BC",
                 "description": "A collection of resources for AP Calculus BC",
+                "media": "https://i.ytimg.com/vi/DOtXBfNxQAs/maxresdefault.jpg",
                 "objects": [
                     {
                         "id": 45,
@@ -905,7 +942,8 @@
                             "math",
                             "ap calc",
                             "calc",
-                            "frq"
+                            "frq",
+                            "calculus bc"
                         ],
                         "author": "Collegeboard",
                         "media": "https://i.ytimg.com/vi/DOtXBfNxQAs/maxresdefault.jpg",
@@ -922,11 +960,12 @@
                             "pacing",
                             "study",
                             "calc",
-                            "guide"
+                            "guide",
+                            "calculus bc"
                         ],
                         "author": "Collegeboard",
                         "media": "https://i.ytimg.com/vi/DOtXBfNxQAs/maxresdefault.jpg",
-                        "description": "Low on time? Has your teacher slacked off the entire year? Tihs resource gives you a guide for how you can study andl earn the entire courses content in only a few months."
+                        "description": "Low on time? Has your teacher slacked off the entire year? This resource gives you a guide for how you can study andl earn the entire courses content in only a few months."
                     },
                     {
                         "id": 47,
@@ -939,7 +978,8 @@
                             "pacing",
                             "study",
                             "calc",
-                            "guide"
+                            "guide",
+                            "calculus bc"
                         ],
                         "author": "Youtube",
                         "media": "https://img.pngio.com/youtube-png-images-free-download-youtube-png-logo-2272_1704.png",
@@ -956,7 +996,8 @@
                             "pacing",
                             "study",
                             "calc",
-                            "guide"
+                            "guide",
+                            "calculus bc"
                         ],
                         "author": "Khan Academy",
                         "media": "https://download.logo.wine/logo/Khan_Academy/Khan_Academy-Logo.wine.png",
@@ -977,7 +1018,8 @@
                             "help",
                             "homework help",
                             "calculus",
-                            "ap calc discord"
+                            "ap calc discord",
+                            "calculus bc"
                         ],
                         "author": "AP Students Discord",
                         "media": "https://i.imgur.com/NFeaW8B.png",
