@@ -1,4 +1,5 @@
-var data;
+var data
+// = require("C:/Users/giris/Repos/HackVH/assets/src/data.json");
 fetch("https://raw.githubusercontent.com/mrblacklicorice/HackVH/main/assets/src/data.json")
     .then(response => response.json())
     .then(res_data => {
@@ -6,10 +7,20 @@ fetch("https://raw.githubusercontent.com/mrblacklicorice/HackVH/main/assets/src/
         console.log(res_data);
         topic_loader(data, topics_name, topics_list, "Subjects");
     });
+
+// topic_loader(data, topics_name, topics_list, "Subjects");
+
 var path;
 
 var topics_name = document.getElementById("topic_name");
 var topics_list = document.getElementsByClassName("posts")[0];
+var search_bar = document.getElementById("query");
+
+search_bar.addEventListener("keypress", function (event) {
+    if (event.code == "Enter") {
+        generateResult(tagMatch(search_bar.value));
+    }
+});
 
 function create_topic(data_, topics_name_, topics_list_) {
     var isSource = false;
@@ -76,7 +87,7 @@ function sourceParser(data_) {
     for (let i = 0; i < data_.length; i++) {
         //Access Sub-Subjects... objects = sub topics
         for (let j = 0; j < data_[i].objects.length; j++) {
-            list.push(...data_[i].objects[j]);
+            list.push(...data_[i].objects[j].objects);
         }
     }
     // End result - A list of sources
@@ -84,13 +95,11 @@ function sourceParser(data_) {
 }
 
 //List will be passed in from sourceParser
-function tagParser(list_) {
+function tagParser(list_, index) {
     var tags = [];
     var formatted_tag = [];
 
-    for (let i = 0; i < list_.length; i++) {
-        tags.push(...list_[i].tags);
-    }
+    tags.push(...list_[index].tags);
 
     for (let i = 0; i < tags.length; i++) {
         formatted_tag.push(...tags[i].split(" "));
@@ -102,19 +111,20 @@ function tagParser(list_) {
 }
 
 function tagMatch(search_) {
-    var sources = sourceParser(data) // Array of sources
+    var sources = sourceParser(data); // Array of sources
     var values = (new Array(sources.length)).fill(0); // Empty result array
-    search_.toLowerCase().split(" ");
+    search_ = (search_.toLowerCase()).split(" ");
     search_.sort();
     for (let i = 0; i < sources.length; i++) { // Outer loop pulls each source one by one 
-        var uni_tag_ = sources[i].tags;  // Access tags 
-        uni_tag_.sort();
+        var uni_tag_ = tagParser(sources, i).sort();// Access tags
         for (let j = 0; j < search_.length; j++) { // Inner loop searches for matches 
             if (uni_tag_.indexOf(search_[j]) > -1) {
                 values[i] += 1;
+
             }
         }
     }
+    console.log(values);
     return values;
 }
 //TODO: Function that takes in HTML search input
@@ -125,16 +135,24 @@ function go_back(path_) {
 
 // TODO: Function that takes in the array of values, sorts it, creates the html objects in the order of most matches to least - Up to a threshhold
 function generateResult(values_) {
-    var sorted = values_.sort(function (a, b) {
-        return a - b  // Sorts the array
-    });
+    var sourceList = [];
+    var sources = sourceParser(data);
 
-    for (let i = 0; i < sorted.length; i++) {
-        if (sorted[i] > 2) {
-            // Genereate HTML object - Call topic_loader
+
+    for (let i = 0; i < values_.length; i++) {
+
+        // TODO: Make threshhold dynamic
+
+        if (values_[i] > 2) {
+            sourceList.push(sources[i]);
         }
     }
-
+    topic_loader(sourceList, topics_name, topics_list, "Results");
 }
 
-// function userSubmission()
+/*
+const { google } = request('googleapis');
+const {OAuth2} = google.auth
+
+
+*/
