@@ -1,7 +1,9 @@
 [
     {
         "topic": "History",
-        "subtopics": [
+        "description": "",
+        "media": "",
+        "objects": [
             {
                 "topic": "AP World History",
                 "description": "A collection of resources for AP World History",
@@ -302,7 +304,9 @@
     },
     {
         "topic": "Science",
-        "subtopics": [
+        "description": "",
+        "media": "",
+        "objects": [
             {
                 "topic": "AP Biology",
                 "description": "A collection of resources for AP Biology",
@@ -593,7 +597,9 @@
     },
     {
         "topic": "English",
-        "subtopics": [
+        "description": "",
+        "media": "",
+        "objects": [
             {
                 "topic": "AP English Language & Composition",
                 "description": "A collection of resources for AP English Language & Composition",
@@ -786,7 +792,9 @@
     },
     {
         "topic": "Math",
-        "subtopics": [
+        "description": "",
+        "media": "",
+        "objects": [
             {
                 "topic": "AP Calculus AB",
                 "description": "A collection of resources for AP Calculus AB",
