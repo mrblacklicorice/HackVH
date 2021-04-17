@@ -1,3 +1,1 @@
 # HackVH
-
-hello
