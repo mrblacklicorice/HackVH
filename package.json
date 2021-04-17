@@ -1,0 +1,25 @@
+{
+  "name": "hackvh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node": "^15.14.0",
+    "require": "^2.4.20",
+    "require.js": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrblacklicorice/HackVH.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrblacklicorice/HackVH/issues"
+  },
+  "homepage": "https://github.com/mrblacklicorice/HackVH#readme"
+}
