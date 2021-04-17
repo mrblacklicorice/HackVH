@@ -50,5 +50,5 @@ function create_topic(data, topics_list_) {
 }
 
 function topic_loader(data, topics_name, topics_list) {
-
+    var hh
 }
