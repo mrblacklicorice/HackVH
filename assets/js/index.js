@@ -35,7 +35,7 @@ function create_topic(data_, topics_name_, topics_list_) {
     li_a.setAttribute("href", "#");
     li_a.setAttribute("class", "button");
     li_a.innerText = "View";
-    // li_a.onclick = (() => topic_loader(data_.objects, topics_name_, topics_list_, data_.topic));
+    li_a.onclick = (() => topic_loader(data_.objects, topics_name_, topics_list_, data_.topic));
 
     li.appendChild(li_a);
 
@@ -53,7 +53,7 @@ function create_topic(data_, topics_name_, topics_list_) {
 
 function topic_loader(data_, topics_name_, topics_list_, input_topic_name_) {
     // fix this tmmr
-    topics_list.empty();
+    topics_list.innerHTML = "";
     topics_name_.innerText = input_topic_name_;
     for (let i = 0; i < data_.length; i++) {
         create_topic(data_[i], topics_name_, topics_list_);
