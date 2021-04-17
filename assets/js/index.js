@@ -1,20 +1,28 @@
-var data
+var data;
+var subjects_list = [];
+
 // = require("C:/Users/giris/Repos/HackVH/assets/src/data.json");
 fetch("https://raw.githubusercontent.com/mrblacklicorice/HackVH/main/assets/src/data.json")
     .then(response => response.json())
     .then(res_data => {
         data = res_data;
         console.log(res_data);
+        data.forEach(subject => {
+            subjects_list.push(subject.topic);
+        });
         topic_loader(data, topics_name, topics_list, "Subjects");
     });
 
 // topic_loader(data, topics_name, topics_list, "Subjects");
 
-var path;
+var path = [];
 
 var topics_name = document.getElementById("topic_name");
 var topics_list = document.getElementsByClassName("posts")[0];
 var search_bar = document.getElementById("query");
+var back_button = document.getElementById("back button");
+
+back_button.onclick = (() => { go_back(path) });
 
 search_bar.addEventListener("keypress", function (event) {
     if (event.code == "Enter") {
@@ -75,6 +83,7 @@ function create_topic(data_, topics_name_, topics_list_) {
 
 function topic_loader(data_, topics_name_, topics_list_, input_topic_name_) {
     topics_list.innerHTML = "";
+    path.push(input_topic_name_);
     topics_name_.innerText = input_topic_name_;
     for (let i = 0; i < data_.length; i++) {
         create_topic(data_[i], topics_name_, topics_list_);
@@ -127,11 +136,6 @@ function tagMatch(search_) {
     console.log(values);
     return values;
 }
-//TODO: Function that takes in HTML search input
-
-function go_back(path_) {
-
-}
 
 // TODO: Function that takes in the array of values, sorts it, creates the html objects in the order of most matches to least - Up to a threshhold
 function generateResult(values_) {
@@ -150,9 +154,16 @@ function generateResult(values_) {
     topic_loader(sourceList, topics_name, topics_list, "Results");
 }
 
-/*
-const { google } = request('googleapis');
-const {OAuth2} = google.auth
 
-
-*/
+function go_back(path_) {
+    if (path_.length == 1) return;
+    path_.pop();
+    var name = path_.pop();
+    if (name == "Subjects") {
+        topic_loader(data, topics_name, topics_list, name);
+    } else if (subjects_list.includes(name)) {
+        topic_loader(data[subjects_list.indexOf(name)].objects, topics_name, topics_list, name);
+    }
+}
+var fs = require('fs');
+var data = fs.readFileSync('data.json');

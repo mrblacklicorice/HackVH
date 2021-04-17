@@ -937,7 +937,7 @@
                         "link": "https://apcentral.collegeboard.org/courses/ap-calculus-bc/exam/past-exam-questions",
                         "rating": 0,
                         "tags": [
-                            "Collegeboard",
+                            "collegeboard",
                             "math",
                             "ap calc",
                             "calc",
@@ -955,12 +955,13 @@
                         "link": "https://apcentral.collegeboard.org/pdf/ap-calculus-bc-course-pacing-guide.pdf",
                         "rating": 0,
                         "tags": [
-                            "Collegeboard",
+                            "collegeboard",
                             "pacing",
                             "study",
                             "calc",
                             "guide",
-                            "calculus bc"
+                            "calculus bc",
+                            "calc"
                         ],
                         "author": "Collegeboard",
                         "media": "https://i.ytimg.com/vi/DOtXBfNxQAs/maxresdefault.jpg",
