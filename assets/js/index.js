@@ -165,5 +165,8 @@ function go_back(path_) {
         topic_loader(data[subjects_list.indexOf(name)].objects, topics_name, topics_list, name);
     }
 }
+
+/*
 var fs = require('fs');
 var data = fs.readFileSync('data.json');
+*/
