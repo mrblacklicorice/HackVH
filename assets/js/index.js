@@ -35,7 +35,7 @@ function create_topic(data_, topics_name_, topics_list_) {
     li_a.setAttribute("href", "#");
     li_a.setAttribute("class", "button");
     li_a.innerText = "View";
-    li_a.onclick = (() => topic_loader(data_.objects, topics_name_, topics_list_, data_.topic));
+    // li_a.onclick = (() => topic_loader(data_.objects, topics_name_, topics_list_, data_.topic));
 
     li.appendChild(li_a);
 
@@ -52,9 +52,41 @@ function create_topic(data_, topics_name_, topics_list_) {
 }
 
 function topic_loader(data_, topics_name_, topics_list_, input_topic_name_) {
+    // fix this tmmr
     topics_list.empty();
     topics_name_.innerText = input_topic_name_;
     for (let i = 0; i < data_.length; i++) {
         create_topic(data_[i], topics_name_, topics_list_);
     }
 }
+
+function sourceParser(data_) {
+    var list = [];
+    //Access Subjects
+    for (let i = 0; i < data_.length; i++) {
+        //Access Sub-Subjects... objects = sub topics
+        for (let j = 0; j < data_[i].objects.length; j++) {
+            list.push(...data_[i].objects[j]);
+        }
+    }
+    return list;
+}
+
+//List will be passed in from sourceParser
+function tagParser(list_) {
+    var tags = [];
+    var formatted_tag = [];
+
+    for (let i = 0; i < list_.length; i++) {
+        tags.push(...list_[i].tags);
+    }
+
+    for (let i = 0; i < tags.length; i++) {
+        formatted_tag.push(...tags[i].split(" "));
+    }
+
+    var uni_tag = [... new Set(formatted_tag)];
+    //end result - An array of split, no duplicate tags
+    return uni_tag;
+}
+
