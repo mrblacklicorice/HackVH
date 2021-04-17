@@ -69,6 +69,7 @@ function sourceParser(data_) {
             list.push(...data_[i].objects[j]);
         }
     }
+    // End result - A list of objects
     return list;
 }
 
@@ -90,3 +91,19 @@ function tagParser(list_) {
     return uni_tag;
 }
 
+function tagMatch(search_) {
+    var result = [];
+    var values = new Array(50).fill(0);
+    search_.split(" ");
+    search_.sort();
+    uni_tag_.sort();
+    for (let i = 0; i < 50; i++) {
+        var uni_tag_ = ""; // temp hold
+        for (let j = 0; j < search_.length; j++) {
+        if (uni_tag_.indexOf(search_[j]) > -1) {
+            values[i] +=1;
+            }
+        }
+    }
+    return result;
+  }
