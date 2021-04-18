@@ -1,6 +1,7 @@
 var data;
 var subjects_list = [];
 
+
 // = require("C:/Users/giris/Repos/HackVH/assets/src/data.json");
 fetch("https://raw.githubusercontent.com/mrblacklicorice/HackVH/main/assets/src/data.json")
     .then(response => response.json())
@@ -51,6 +52,7 @@ function create_topic(data_, topics_name_, topics_list_) {
     var li = document.createElement('li'); // One elemnt from ul 
     var li_view = document.createElement('a'); //  ???
     var li_save = document.createElement('a');
+    var li_commend = document.createElement('a');
 
     a.setAttribute("class", "image");
 
@@ -74,6 +76,7 @@ function create_topic(data_, topics_name_, topics_list_) {
         li_view.onclick = (() => topic_loader(data_.objects, topics_name_, topics_list_, data_.topic));
     } else {
         li_view.href = data_.link;
+        li_view.target = "_blank";
     }
 
     // view button
@@ -86,12 +89,24 @@ function create_topic(data_, topics_name_, topics_list_) {
     }
 
 
+    var index = data_.index;
+    li_commend.setAttribute("class", "button");
+    li_commend.innerText = "Commend";
+    if (isSource) {
+
+        li_commend.onclick = (() => updateStorage(index));
+    }
+
+
     a.appendChild(img);
 
     ul.appendChild(li_view);
     ul.appendChild(document.createElement('br'));
-    ul.appendChild(li_save);
 
+    if (isSource) {
+        ul.appendChild(li_save);
+        ul.appendChild(li_commend);
+    }
     article.appendChild(a);
     article.appendChild(h3);
     article.appendChild(p);
@@ -189,7 +204,6 @@ function go_back(path_) {
         topic_loader(data[subjects_list.indexOf(name)].objects, topics_name, topics_list, name);
     }
 }
-/*
-var fs = require('fs');
-var data = fs.readFileSync('data.json');
-*/
+
+
+
