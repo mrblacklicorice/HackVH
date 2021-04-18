@@ -1,22 +1,6 @@
-
 var data;
 var subjects_list = [];
-document.addEventListener("DOMContentLoaded", event => {
-    const { firebase } = require("googleapis/build/src/apis/firebase");
-    const app = firebase.app();
-    console.log(app);
-});
 
-function googleLogin() {
-    const provider = firebase.initializeApp();
-    firebase.auth().signInWithPopup(provider)
-    .then(result => { 
-        const user = result.user;
-        console.log(user);
-        
-    })
-    .catch(console.log);
-}
 
 // = require("C:/Users/giris/Repos/HackVH/assets/src/data.json");
 fetch("https://raw.githubusercontent.com/mrblacklicorice/HackVH/main/assets/src/data.json")
