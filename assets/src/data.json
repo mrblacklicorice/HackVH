@@ -70,7 +70,8 @@
                             "cram",
                             "study",
                             "world history",
-                            "history"
+                            "history",
+                            "ap"
                         ],
                         "author": "Collegeboard",
                         "media": "https://i.ytimg.com/vi/BxlZrn5Dwdw/maxresdefault.jpg",
@@ -349,7 +350,7 @@
     {
         "topic": "Science",
         "description": "Includes: AP Biology, AP Chemistry, AP Physics 1",
-        "media": "https://i.imgur.com/mmydm1q.png",
+        "media": "https://p3cdn4static.sharpschool.com/UserFiles/Servers/Server_3907102/Image/hand-drawn-science-education-background_23-2148499326.jpg",
         "objects": [
             {
                 "topic": "AP Biology",
@@ -503,7 +504,9 @@
                             "chemistry",
                             "chem formulas",
                             "chem equations",
-                            "chem"
+                            "chem",
+                            "ap",
+                            "sheet"
                         ],
                         "author": "Collegeboard",
                         "media": "https://i.imgur.com/Uj4vL5j.jpg",
@@ -955,7 +958,9 @@
                             "study",
                             "calc",
                             "guide",
-                            "calculus ab"
+                            "calculus ab",
+                            "ap",
+                            "equation sheet"
                         ],
                         "author": "Frontier",
                         "media": "https://allaccess.collegeboard.org/allaccess/styles/cb_post_square_thumbnail/public/2020-02/College-Board-Logo-Icon.JPG?h=1a6cd273&itok=q8PYwOVi",
@@ -980,7 +985,8 @@
                             "ap calc",
                             "calc",
                             "frq",
-                            "calculus bc"
+                            "calculus bc",
+                            "past frqs"
                         ],
                         "author": "Collegeboard",
                         "media": "https://i.ytimg.com/vi/DOtXBfNxQAs/maxresdefault.jpg",
@@ -999,7 +1005,9 @@
                             "calc",
                             "guide",
                             "calculus bc",
-                            "calc"
+                            "calc",
+                            "calc bc",
+                            "cram study guide"
                         ],
                         "author": "Collegeboard",
                         "media": "https://i.ytimg.com/vi/DOtXBfNxQAs/maxresdefault.jpg",
@@ -1017,6 +1025,9 @@
                             "study",
                             "calc",
                             "guide",
+                            "video",
+                            "unit 6 - review",
+                            "calc bc",
                             "calculus bc"
                         ],
                         "author": "Youtube",
@@ -1035,11 +1046,14 @@
                             "study",
                             "calc",
                             "guide",
-                            "calculus bc"
+                            "calculus bc",
+                            "calc bc",
+                            "khan",
+                            "learn calculus"
                         ],
                         "author": "Khan Academy",
                         "media": "https://download.logo.wine/logo/Khan_Academy/Khan_Academy-Logo.wine.png",
-                        "description": ""
+                        "description": "Kahn Academy is a fantastic source for you to learn all about Calculus!"
                     },
                     {
                         "id": 49,
@@ -1057,7 +1071,9 @@
                             "homework help",
                             "calculus",
                             "ap calc discord",
-                            "calculus bc"
+                            "calculus bc",
+                            "student",
+                            "chat"
                         ],
                         "author": "AP Students Discord",
                         "media": "https://i.imgur.com/NFeaW8B.png",

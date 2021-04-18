@@ -49,17 +49,8 @@ function create_topic(data_, topics_name_, topics_list_) {
     var p = document.createElement('p'); //  Description
     var ul = document.createElement('ul'); // List object - Button(s)
     var li = document.createElement('li'); // One elemnt from ul 
-    var li_button = document.createElement('a'); //  ???
-    var li_like = document.createElement('img');
-    var li_dislike = document.createElement('a');
-    var li_archive = document.createElement('a');
-
-
-    li_like.setAttribute("src", "./Icons/iconfinder_-_Love-Heart-Romantic_3844403.png")
-    // <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-    // 					<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-    // 					<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a>
-    // 					</li>
+    var li_view = document.createElement('a'); //  ???
+    var li_save = document.createElement('a');
 
     a.setAttribute("class", "image");
 
@@ -76,22 +67,30 @@ function create_topic(data_, topics_name_, topics_list_) {
 
     ul.setAttribute("class", "actions");
 
-    li_button.setAttribute("class", "button");
-    li_button.innerText = "View";
+    // view button
+    li_view.setAttribute("class", "button");
+    li_view.innerText = "View";
     if (!isSource) {
-        li_button.onclick = (() => topic_loader(data_.objects, topics_name_, topics_list_, data_.topic));
+        li_view.onclick = (() => topic_loader(data_.objects, topics_name_, topics_list_, data_.topic));
     } else {
-        li_button.href = data_.link;
-
+        li_view.href = data_.link;
     }
-    li.appendChild(li_button);
-    li.appendChild(li_archive);
-    li.appendChild(li_dislike);
-    li.appendChild(li_like);
+
+    // view button
+    li_save.setAttribute("class", "button");
+    li_save.innerText = "Save";
+    if (!isSource) {
+        li_save.onclick = (() => topic_loader(data_.objects, topics_name_, topics_list_, data_.topic));
+    } else {
+        li_save.href = data_.link;
+    }
+
 
     a.appendChild(img);
 
-    ul.appendChild(li);
+    ul.appendChild(li_view);
+    ul.appendChild(document.createElement('br'));
+    ul.appendChild(li_save);
 
     article.appendChild(a);
     article.appendChild(h3);
@@ -134,9 +133,10 @@ function tagParser(list_, index) {
         formatted_tag.push(...tags[i].split(" "));
     }
 
-    var uni_tag = [... new Set(formatted_tag)];
+    //  var uni_tag = [... new Set(formatted_tag)];
     //end result - An array of split, no duplicate tags
-    return uni_tag;
+    //  return uni_tag;
+    return formatted_tag;
 }
 
 function tagMatch(search_) {
