@@ -1,21 +1,87 @@
 var data;
+var ratings_database;
 var subjects_list = [];
 
+var app;
+var db;
+var ratings;
 
-// = require("C:/Users/giris/Repos/HackVH/assets/src/data.json");
-fetch("https://raw.githubusercontent.com/mrblacklicorice/HackVH/main/assets/src/data.json")
-    .then(response => response.json())
-    .then(res_data => {
-        data = res_data;
-        console.log(res_data);
-        data.forEach(subject => {
-            subjects_list.push(subject.topic);
-        });
-        topic_loader(data, topics_name, topics_list, "Subjects");
-    });
+document.addEventListener("DOMContentLoaded", event => {
+    app = firebase.app();
+    console.log(app);
+    db = firebase.firestore();
+    ratings = db.collection('ratings').doc('source-ratings');
+    ratings.get()
+           .then(doc => {
+               var parsed_data = doc.data();
+               ratings_database = parsed_data.sourcearray;
+                console.log(ratings_database);
+                start();
+           //     ratings.update( { sourcearray: values })
+    })
+});
 
-// topic_loader(data, topics_name, topics_list, "Subjects");
 
+function start() {
+     fetch("https://raw.githubusercontent.com/mrblacklicorice/HackVH/main/public/src/data.json")
+     .then(response => response.json())
+     .then(res_data => {
+         data = res_data;
+         console.log(res_data);
+         data.forEach(subject => {
+             subjects_list.push(subject.topic);
+         });
+         readRating(ratings_database);
+         topic_loader(data, topics_name, topics_list, "Subjects");
+     });  
+}
+
+
+
+//Takes in the ID of the object that is being upvoted
+function updateRating(upvote) {
+    const db = firebase.firestore();
+    const ratings = db.collection('ratings').doc('source-ratings');
+    ratings.get()
+        .then(doc => {
+            var parsed_data = doc.data();
+            var array = parsed_data.sourcearray;
+            array[upvote] +=1;
+            console.log(array);
+          ratings.update( { sourcearray: array})
+        })
+    
+}
+
+
+function readRating(ratings_database_) {
+    var sources = sourceParser(data);
+   for (let i = 0; i < ratings_database_.length; i++) {
+       sources[i].rating = ratings_database_[i];
+    }
+
+    for (let i = 0; i < data.length; i++) {
+        for (let j = 0; j < data[i].objects.length; j++) {
+            for (let k = 0; k < data[i].objects[j].objects.length; k++) {
+                data[i].objects[j].objects[k].rating = sources[data[i].objects[j].objects[k].id].rating;
+            }
+            
+        }
+    }
+}
+
+function googleLogin() {
+
+
+    const provider = new firebase.auth.GoogleAuthProvider();
+
+    firebase.auth().signInWithPopup(provider)
+    .then(result => {
+        const user = result.user;
+        console.log(user);
+    })
+}
+  
 var path = [];
 
 var topics_name = document.getElementById("topic_name");
@@ -88,14 +154,14 @@ function create_topic(data_, topics_name_, topics_list_) {
         li_save.href = data_.link;
     }
 
-
-    var index = data_.index;
+    li_commend.setAttribute("id", "co"+String(data_.id));
     li_commend.setAttribute("class", "button");
-    li_commend.innerText = "Commend";
-    if (isSource) {
-
-        li_commend.onclick = (() => updateStorage(index));
-    }
+    li_commend.innerText = "Commend " + data_.rating;
+    li_commend.onclick = (() => {
+        updateRating(data_.id);
+        readRating(ratings_database);
+        this.innerText = "Commend " + data_.rating;
+    });
 
 
     a.appendChild(img);
