@@ -6,6 +6,8 @@ var app;
 var db;
 var ratings;
 
+
+// load when webpage starts, firebase thing
 document.addEventListener("DOMContentLoaded", event => {
     app = firebase.app();
     console.log(app);
@@ -21,7 +23,7 @@ document.addEventListener("DOMContentLoaded", event => {
     })
 });
 
-
+// fethces the data after database loads in and start the whole webpage
 function start() {
      fetch("https://raw.githubusercontent.com/mrblacklicorice/HackVH/main/public/src/data.json")
      .then(response => response.json())
@@ -48,12 +50,14 @@ function updateRating(upvote) {
             var array = parsed_data.sourcearray;
             array[upvote] +=1;
             console.log(array);
-          ratings.update( { sourcearray: array})
+            ratings.update({ sourcearray: array });
+            ratings_database = array;
+            readRating(ratings_database);
         })
     
 }
 
-
+// syncs the database rating values to runtime object "data"
 function readRating(ratings_database_) {
     var sources = sourceParser(data);
    for (let i = 0; i < ratings_database_.length; i++) {
@@ -64,15 +68,14 @@ function readRating(ratings_database_) {
         for (let j = 0; j < data[i].objects.length; j++) {
             for (let k = 0; k < data[i].objects[j].objects.length; k++) {
                 data[i].objects[j].objects[k].rating = sources[data[i].objects[j].objects[k].id].rating;
+                console.log(data[i].objects[j].objects[k].rating);
             }
-            
         }
     }
 }
 
+// logins in using google
 function googleLogin() {
-
-
     const provider = new firebase.auth.GoogleAuthProvider();
 
     firebase.auth().signInWithPopup(provider)
@@ -90,6 +93,7 @@ var search_bar = document.getElementById("query");
 var back_button = document.getElementById("back button");
 var search_button = document.getElementById("search button");
 
+
 search_button.onclick = (() => {
     generateResult(tagMatch(search_bar.value));
     search_bar.value = "";
@@ -104,6 +108,7 @@ search_bar.addEventListener("keypress", function (event) {
     }
 });
 
+// creates individual tabs that showcase the data
 function create_topic(data_, topics_name_, topics_list_) {
     var isSource = false;
     if (data_.hasOwnProperty("id")) {
@@ -159,8 +164,8 @@ function create_topic(data_, topics_name_, topics_list_) {
     li_commend.innerText = "Commend " + data_.rating;
     li_commend.onclick = (() => {
         updateRating(data_.id);
-        readRating(ratings_database);
-        this.innerText = "Commend " + data_.rating;
+        var ele = document.getElementById("co" + String(data_.id));
+        ele.innerText = "Commend " + data_.rating;
     });
 
 
@@ -181,6 +186,8 @@ function create_topic(data_, topics_name_, topics_list_) {
     topics_list_.appendChild(article);
 }
 
+// calls in a bunch of create topics and uses the data that is in arrays
+
 function topic_loader(data_, topics_name_, topics_list_, input_topic_name_) {
     topics_list.innerHTML = "";
     path.push(input_topic_name_);
@@ -190,6 +197,8 @@ function topic_loader(data_, topics_name_, topics_list_, input_topic_name_) {
     }
 }
 
+
+// takes in data struct and gives out array of sources
 function sourceParser(data_) {
     var list = [];
     //Access Subjects
@@ -220,6 +229,7 @@ function tagParser(list_, index) {
     return formatted_tag;
 }
 
+// gives how many times the tags were triggered
 function tagMatch(search_) {
     var sources = sourceParser(data); // Array of sources
     var values = (new Array(sources.length)).fill(0); // Empty result array
@@ -260,6 +270,7 @@ function generateResult(loi) {
     topic_loader(sourceList, topics_name, topics_list, "Results");
 }
 
+// function that manipulates the path array to navigate in the webpages
 function go_back(path_) {
     if (path_.length == 1) return;
     path_.pop();
