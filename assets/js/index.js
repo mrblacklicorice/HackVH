@@ -48,8 +48,18 @@ function create_topic(data_, topics_name_, topics_list_) {
     var h3 = document.createElement('h3'); // Name - Topic, Subtopic, Source
     var p = document.createElement('p'); //  Description
     var ul = document.createElement('ul'); // List object - Button(s)
-    var li = document.createElement('li'); // One eleemnt from ul 
-    var li_a = document.createElement('a'); //  ???
+    var li = document.createElement('li'); // One elemnt from ul 
+    var li_button = document.createElement('a'); //  ???
+    var li_like = document.createElement('img');
+    var li_dislike = document.createElement('a');
+    var li_archive = document.createElement('a');
+
+
+    li_like.setAttribute("src", "./Icons/iconfinder_-_Love-Heart-Romantic_3844403.png")
+    // <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+    // 					<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+    // 					<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a>
+    // 					</li>
 
     a.setAttribute("class", "image");
 
@@ -66,15 +76,18 @@ function create_topic(data_, topics_name_, topics_list_) {
 
     ul.setAttribute("class", "actions");
 
-    li_a.setAttribute("class", "button");
-    li_a.innerText = "View";
+    li_button.setAttribute("class", "button");
+    li_button.innerText = "View";
     if (!isSource) {
-        li_a.onclick = (() => topic_loader(data_.objects, topics_name_, topics_list_, data_.topic));
+        li_button.onclick = (() => topic_loader(data_.objects, topics_name_, topics_list_, data_.topic));
     } else {
-        li_a.href = data_.link;
+        li_button.href = data_.link;
 
     }
-    li.appendChild(li_a);
+    li.appendChild(li_button);
+    li.appendChild(li_archive);
+    li.appendChild(li_dislike);
+    li.appendChild(li_like);
 
     a.appendChild(img);
 
@@ -166,7 +179,6 @@ function generateResult(loi) {
     topic_loader(sourceList, topics_name, topics_list, "Results");
 }
 
-
 function go_back(path_) {
     if (path_.length == 1) return;
     path_.pop();
@@ -177,11 +189,6 @@ function go_back(path_) {
         topic_loader(data[subjects_list.indexOf(name)].objects, topics_name, topics_list, name);
     }
 }
-
-
-
-
-
 /*
 var fs = require('fs');
 var data = fs.readFileSync('data.json');
