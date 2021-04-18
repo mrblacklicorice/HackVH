@@ -23,8 +23,10 @@
                             "saq",
                             "dbq",
                             "leq",
+                            "history",
                             "world history",
-                            "frq"
+                            "frq",
+                            "ap world history"
                         ],
                         "author": "Collegeboard",
                         "media": "https://i.ytimg.com/vi/BxlZrn5Dwdw/maxresdefault.jpg",
@@ -45,7 +47,12 @@
                             "topics",
                             "exam",
                             "world history",
-                            "concepts"
+                            "concepts",
+                            "history",
+                            "saq",
+                            "dbq",
+                            "leq",
+                            "ap world history"
                         ],
                         "author": "Collegeboard",
                         "media": "https://i.ytimg.com/vi/BxlZrn5Dwdw/maxresdefault.jpg",
@@ -62,7 +69,8 @@
                             "exam",
                             "cram",
                             "study",
-                            "world history"
+                            "world history",
+                            "history"
                         ],
                         "author": "Collegeboard",
                         "media": "https://i.ytimg.com/vi/BxlZrn5Dwdw/maxresdefault.jpg",
@@ -81,7 +89,8 @@
                             "war",
                             "unit 7",
                             "world history",
-                            "video"
+                            "video",
+                            "history"
                         ],
                         "author": "Heimler's History",
                         "media": "https://wildensocialstudies.weebly.com/uploads/2/1/1/6/21166454/screen-shot-2020-09-08-at-2-27-52-pm_orig.png",
@@ -102,7 +111,8 @@
                             "homeworkhelp",
                             "worlddiscord",
                             "world history",
-                            "ap"
+                            "ap",
+                            "history"
                         ],
                         "author": "AP Students Discord",
                         "media": "https://hypixel.net/attachments/join-discord-png-13-png.1715046/",
@@ -126,7 +136,9 @@
                             "exam",
                             "cram",
                             "study",
-                            "european history"
+                            "european history",
+                            "euro",
+                            "history"
                         ],
                         "author": "Collegeboard",
                         "media": "https://apstudents.collegeboard.org/ap/2019-07/share-image.png",
@@ -146,7 +158,8 @@
                             "european",
                             "history",
                             "european history",
-                            "concepts"
+                            "concepts",
+                            "history"
                         ],
                         "author": "Collegeboard",
                         "media": "https://apstudents.collegeboard.org/ap/2019-07/share-image.png",
@@ -166,7 +179,9 @@
                             "review",
                             "ap euro",
                             "european",
-                            "european history"
+                            "european history",
+                            "euro",
+                            "history"
                         ],
                         "author": "Collegeboard",
                         "media": "https://apstudents.collegeboard.org/ap/2019-07/share-image.png",
@@ -184,7 +199,9 @@
                             "nationalism",
                             "german unification",
                             "italian unification",
-                            "european history"
+                            "european history",
+                            "euro",
+                            "history"
                         ],
                         "author": "Crashcourse",
                         "media": "https://www.cavsconnect.com/wp-content/uploads/2017/03/Screen-Shot-2017-03-05-at-8.46.54-PM.png",
@@ -206,7 +223,8 @@
                             "homeworkhelp",
                             "ape",
                             "eurodiscord",
-                            "european history"
+                            "european history",
+                            "history"
                         ],
                         "author": "AP Students Discord",
                         "media": "https://hypixel.net/attachments/join-discord-png-13-png.1715046/",
@@ -253,7 +271,8 @@
                             "study",
                             "apush",
                             "ap us",
-                            "us history"
+                            "us history",
+                            "history"
                         ],
                         "author": "Collegeboard",
                         "media": "https://i.ytimg.com/vi/AvD8zA5mVBU/maxresdefault.jpg",
@@ -273,7 +292,8 @@
                             "kcq",
                             "topics",
                             "exam",
-                            "us history"
+                            "us history",
+                            "history"
                         ],
                         "author": "Collegeboard",
                         "media": "https://i.ytimg.com/vi/AvD8zA5mVBU/maxresdefault.jpg",
@@ -292,7 +312,8 @@
                             "manifest destiny",
                             "mexican american war",
                             "us history",
-                            "us"
+                            "us",
+                            "history"
                         ],
                         "author": "Kahn Academy",
                         "media": "https://download.logo.wine/logo/Khan_Academy/Khan_Academy-Logo.wine.png",
@@ -314,7 +335,8 @@
                             "apus",
                             "apushdiscord",
                             "us history",
-                            "us"
+                            "us",
+                            "history"
                         ],
                         "author": "AP Students Discord",
                         "media": "https://hypixel.net/attachments/join-discord-png-13-png.1715046/",
