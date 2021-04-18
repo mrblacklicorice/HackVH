@@ -375,7 +375,8 @@
                             "bio formulas",
                             "study",
                             "bio help",
-                            "bio test"
+                            "bio test",
+                            "video"
                         ],
                         "author": "Robert Tait",
                         "media": "https://img.pngio.com/youtube-png-images-free-download-youtube-png-logo-2272_1704.png",
@@ -396,7 +397,8 @@
                             "help",
                             "homeworkhelp",
                             "biology",
-                            "apbiodiscord"
+                            "apbiodiscord",
+                            "ap bio"
                         ],
                         "author": "AP Students Discord",
                         "media": "https://hypixel.net/attachments/join-discord-png-13-png.1715046/",
@@ -418,7 +420,8 @@
                             "Collegeboard",
                             "frq",
                             "ap chem",
-                            "chemistry"
+                            "chemistry",
+                            "chem"
                         ],
                         "author": "Collegeboard",
                         "media": "https://i.ytimg.com/vi/Fpaq5BWRMvQ/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBKyq1sj5YUPACO5xrjf__93yhR_Q",
@@ -435,7 +438,8 @@
                             "pacing",
                             "study",
                             "chem",
-                            "guide"
+                            "guide",
+                            "cram"
                         ],
                         "author": "Collegeboard",
                         "media": "https://i.imgur.com/Uj4vL5j.jpg",
@@ -468,7 +472,8 @@
                             "study",
                             "chem test",
                             "ap chem",
-                            "scram"
+                            "scram",
+                            "video"
                         ],
                         "author": "Youtube",
                         "media": "https://img.pngio.com/youtube-png-images-free-download-youtube-png-logo-2272_1704.png",
@@ -512,7 +517,8 @@
                             "pacing",
                             "study",
                             "physics",
-                            "guide"
+                            "guide",
+                            "physics 1"
                         ],
                         "author": "Collegeboard",
                         "media": "https://i3.ytimg.com/vi/Ty8q8lFrPX0/hqdefault.jpg",
@@ -568,7 +574,7 @@
                         ],
                         "author": "Youtube",
                         "media": "https://img.pngio.com/youtube-png-images-free-download-youtube-png-logo-2272_1704.png",
-                        "description": "Need tto learn angular momentum? Look no further!"
+                        "description": "Need to learn angular momentum? Look no further!"
                     },
                     {
                         "id": 29,
@@ -834,7 +840,7 @@
                             "frq"
                         ],
                         "author": "Collegeboard",
-                        "media": "https://i.imgur.com/3GF2ZX6.png",
+                        "media": "https://i.ytimg.com/vi/Jm1qJKYR8wM/hqdefault.jpg",
                         "description": "The Collegeboard publishes past essay exam questions every year, providing you with a valuable resource to view the exam format, and look at sample responses and analysis by actual AP graders, making it an excellent resource for your AP studying!"
                     },
                     {
@@ -848,10 +854,12 @@
                             "pacing",
                             "study",
                             "calc",
-                            "guide"
+                            "guide",
+                            "ap",
+                            "course outline"
                         ],
                         "author": "Collegeboard",
-                        "media": "https://i.imgur.com/3GF2ZX6.png",
+                        "media": "https://i.ytimg.com/vi/Jm1qJKYR8wM/hqdefault.jpg",
                         "description": "Low on time? Has your teacher slacked off the entire year? Tihs resource gives you a guide for how you can study andl earn the entire courses content in only a few months."
                     },
                     {
@@ -865,7 +873,9 @@
                             "pacing",
                             "study",
                             "calc",
-                            "guide"
+                            "guide",
+                            "unit 3.3",
+                            "ap"
                         ],
                         "author": "Youtube",
                         "media": "https://img.pngio.com/youtube-png-images-free-download-youtube-png-logo-2272_1704.png",
@@ -882,7 +892,9 @@
                             "pacing",
                             "study",
                             "calc",
-                            "guide"
+                            "guide",
+                            "formula sheet",
+                            "ap"
                         ],
                         "author": "Frontier",
                         "media": "https://allaccess.collegeboard.org/allaccess/styles/cb_post_square_thumbnail/public/2020-02/College-Board-Logo-Icon.JPG?h=1a6cd273&itok=q8PYwOVi",

@@ -21,12 +21,19 @@ var topics_name = document.getElementById("topic_name");
 var topics_list = document.getElementsByClassName("posts")[0];
 var search_bar = document.getElementById("query");
 var back_button = document.getElementById("back button");
+var search_button = document.getElementById("search button");
+
+search_button.onclick = (() => {
+    generateResult(tagMatch(search_bar.value));
+    search_bar.value = "";
+})
 
 back_button.onclick = (() => { go_back(path) });
 
 search_bar.addEventListener("keypress", function (event) {
-    if (event.code == "Enter") {
+    if (event.key == "Enter" || event.code == 13) {
         generateResult(tagMatch(search_bar.value));
+        search_bar.value = "";
     }
 });
 
@@ -122,34 +129,39 @@ function tagParser(list_, index) {
 function tagMatch(search_) {
     var sources = sourceParser(data); // Array of sources
     var values = (new Array(sources.length)).fill(0); // Empty result array
-    search_ = (search_.toLowerCase()).split(" ");
+    search_ = ((search_.toLowerCase()).trim()).split(" ");
     search_.sort();
     for (let i = 0; i < sources.length; i++) { // Outer loop pulls each source one by one 
         var uni_tag_ = tagParser(sources, i).sort();// Access tags
         for (let j = 0; j < search_.length; j++) { // Inner loop searches for matches 
             if (uni_tag_.indexOf(search_[j]) > -1) {
                 values[i] += 1;
-
             }
         }
     }
     console.log(values);
-    return values;
+    var hash = {};
+    for (let i = 0; i < values.length; i++) {
+        if (!hash.hasOwnProperty(values[i])) {
+            hash[values[i]] = [];
+        }
+        hash[values[i]].push(i);
+    }
+    var total_list = [];
+    for (let i = 10; i > 0; i--) {
+        if (hash.hasOwnProperty(i)) {
+            total_list.push(...hash[i]);
+        }
+    }
+    return total_list;
 }
 
 // TODO: Function that takes in the array of values, sorts it, creates the html objects in the order of most matches to least - Up to a threshhold
-function generateResult(values_) {
+function generateResult(loi) {
     var sourceList = [];
     var sources = sourceParser(data);
-
-
-    for (let i = 0; i < values_.length; i++) {
-
-        // TODO: Make threshhold dynamic
-
-        if (values_[i] > 2) {
-            sourceList.push(sources[i]);
-        }
+    for (let i = 0; i < (loi.length / 3); i++) {
+        sourceList.push(sources[loi[i]]);
     }
     topic_loader(sourceList, topics_name, topics_list, "Results");
 }
@@ -165,6 +177,10 @@ function go_back(path_) {
         topic_loader(data[subjects_list.indexOf(name)].objects, topics_name, topics_list, name);
     }
 }
+
+
+
+
 
 /*
 var fs = require('fs');
