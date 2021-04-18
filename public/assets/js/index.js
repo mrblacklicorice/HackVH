@@ -74,6 +74,10 @@ function readRating(ratings_database_) {
     }
 }
 
+
+
+// -----------------------------------------------------------------------------------------------------------------
+
 // logins in using google
 function googleLogin() {
     const provider = new firebase.auth.GoogleAuthProvider();
@@ -84,6 +88,7 @@ function googleLogin() {
         console.log(user);
     })
 }
+// ------------------------------------------------------------------------------------------------------------------
   
 var path = [];
 
@@ -197,7 +202,7 @@ function topic_loader(data_, topics_name_, topics_list_, input_topic_name_) {
     }
 }
 
-
+// ----------------------------------------------------------------------------------------------------------------------
 // takes in data struct and gives out array of sources
 function sourceParser(data_) {
     var list = [];
