@@ -10,7 +10,6 @@ var ratings;
 // load when webpage starts, firebase thing
 document.addEventListener("DOMContentLoaded", event => {
     app = firebase.app();
-    console.log(app);
     db = firebase.firestore();
     ratings = db.collection('ratings').doc('source-ratings');
     ratings.get()
