@@ -13,28 +13,28 @@ document.addEventListener("DOMContentLoaded", event => {
     db = firebase.firestore();
     ratings = db.collection('ratings').doc('source-ratings');
     ratings.get()
-           .then(doc => {
-               var parsed_data = doc.data();
-               ratings_database = parsed_data.sourcearray;
-                console.log(ratings_database);
-                start();
-           //     ratings.update( { sourcearray: values })
-    })
+        .then(doc => {
+            var parsed_data = doc.data();
+            ratings_database = parsed_data.sourcearray;
+            console.log(ratings_database);
+            start();
+            //     ratings.update( { sourcearray: values })
+        })
 });
 
 // fethces the data after database loads in and start the whole webpage
 function start() {
-     fetch("https://raw.githubusercontent.com/mrblacklicorice/HackVH/main/public/src/data.json")
-     .then(response => response.json())
-     .then(res_data => {
-         data = res_data;
-         console.log(res_data);
-         data.forEach(subject => {
-             subjects_list.push(subject.topic);
-         });
-         readRating(ratings_database);
-         topic_loader(data, topics_name, topics_list, "Subjects");
-     });  
+    fetch("https://raw.githubusercontent.com/mrblacklicorice/HackVH/main/public/src/data.json")
+        .then(response => response.json())
+        .then(res_data => {
+            data = res_data;
+            console.log(res_data);
+            data.forEach(subject => {
+                subjects_list.push(subject.topic);
+            });
+            readRating(ratings_database);
+            topic_loader(data, topics_name, topics_list, "Subjects");
+        });
 }
 
 
@@ -47,20 +47,19 @@ function updateRating(upvote) {
         .then(doc => {
             var parsed_data = doc.data();
             var array = parsed_data.sourcearray;
-            array[upvote] +=1;
+            array[upvote] += 1;
             console.log(array);
             ratings.update({ sourcearray: array });
             ratings_database = array;
             readRating(ratings_database);
         })
-    
 }
 
 // syncs the database rating values to runtime object "data"
 function readRating(ratings_database_) {
     var sources = sourceParser(data);
-   for (let i = 0; i < ratings_database_.length; i++) {
-       sources[i].rating = ratings_database_[i];
+    for (let i = 0; i < ratings_database_.length; i++) {
+        sources[i].rating = ratings_database_[i];
     }
 
     for (let i = 0; i < data.length; i++) {
@@ -74,21 +73,6 @@ function readRating(ratings_database_) {
 }
 
 
-
-// -----------------------------------------------------------------------------------------------------------------
-
-// logins in using google
-function googleLogin() {
-    const provider = new firebase.auth.GoogleAuthProvider();
-
-    firebase.auth().signInWithPopup(provider)
-    .then(result => {
-        const user = result.user;
-        console.log(user);
-    })
-}
-// ------------------------------------------------------------------------------------------------------------------
-  
 var path = [];
 
 var topics_name = document.getElementById("topic_name");
@@ -163,7 +147,7 @@ function create_topic(data_, topics_name_, topics_list_) {
         li_save.href = data_.link;
     }
 
-    li_commend.setAttribute("id", "co"+String(data_.id));
+    li_commend.setAttribute("id", "co" + String(data_.id));
     li_commend.setAttribute("class", "button");
     li_commend.innerText = "Commend " + data_.rating;
     li_commend.onclick = (() => {
