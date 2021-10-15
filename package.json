@@ -1,0 +1,19 @@
+{
+  "name": "hackvh",
+  "version": "1.0.0",
+  "description": "Made in 36 hours for the HackVH competition, BABA is a site that contains a curated database of AP content, making studying for the exams a breeze.\r Try it out: https://vhhack.web.app/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrblacklicorice/HackVH.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrblacklicorice/HackVH/issues"
+  },
+  "homepage": "https://github.com/mrblacklicorice/HackVH#readme"
+}
