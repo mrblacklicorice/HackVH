@@ -125,6 +125,7 @@ function create_topic(data_, topics_name_, topics_list_) {
     }
 
     p.innerText = data_.description; // Description of Source
+    p.setAttribute("class", "topicDescription");
 
     ul.setAttribute("class", "actions");
 

@@ -1890,7 +1890,7 @@ header p {
 }
 
 header.major > :last-child {
-  border-bottom: solid 3px #f56a6a;
+  border-bottom: solid 3px pink;
   display: inline-block;
   margin: 0 0 2em 0;
   padding: 0 0.75em 0.5em 0;
@@ -2153,6 +2153,13 @@ input[type="radio"] + label:before {
   font-family: "Font Awesome 5 Brands";
 }
 
+/*Paragraph Topic Description*/
+
+.topicDescription {
+  min-height: 9%;
+  /*max-height: 11%;*/
+}
+
 /* Image */
 .image {
   border-radius: 0.375em;
@@ -2165,6 +2172,11 @@ input[type="radio"] + label:before {
   border-radius: 0.375em;
   display: block;
   object-fit: contain;
+  /*max-width: 50%;
+  max-height: 50%;*/
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  object-position: 50% 50%;
 }
 
 .image.left,
