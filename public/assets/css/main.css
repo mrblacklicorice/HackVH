@@ -2156,7 +2156,7 @@ input[type="radio"] + label:before {
 /*Paragraph Topic Description*/
 
 .topicDescription {
-  min-height: 9%;
+  min-height: 6%;
   /*max-height: 11%;*/
 }
 
