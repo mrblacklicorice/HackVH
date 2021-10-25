@@ -2918,6 +2918,7 @@ button:disabled,
   margin: 0 0 6em 6em;
   position: relative;
   width: calc(33.33333% - 6em);
+  min-height: 3%;
 }
 
 .posts article:before {
